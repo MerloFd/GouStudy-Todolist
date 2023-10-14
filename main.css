@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(238, 76, 76);
+    background-color: rgb(216, 66, 66);
 }
 
 .container{
@@ -20,7 +20,6 @@ header .container{
 }
 
 header{
-    font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
 
@@ -32,13 +31,15 @@ header{
 }
 
 header h1{
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 44px;
 
     margin-right: 380px;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 .btn-settings button{
+    font-family: 'Poppins', sans-serif;
+
     width: 104px;
     height: 36px;
     margin-left: 24px;
@@ -48,14 +49,15 @@ header h1{
     cursor: pointer;
 
     font-weight: bold;
+    font-size: 20px;
     color: #000000;
     background-color: rgb(243, 101, 101);
-    box-shadow: 6px 4px 2px rgb(0, 0, 0);
+    box-shadow: 5px 4px 2px rgb(0, 0, 0);
 }
 
 .btn-settings button:hover{
-    background-color: rgb(252, 47, 47);
-    box-shadow: 3px 2px 1px rgb(0, 0, 0);
+    background-color: rgb(250, 69, 69);
+    box-shadow: 4px 2px 4px rgb(0, 0, 0);
 }
 
 .btn-settings{
@@ -73,3 +75,145 @@ header h1{
 .info:hover{
     max-width: 68px;
 }
+
+main{
+    max-width: 720px;
+    width: 100%;
+    margin-left: 24px;
+    margin-top: 16px;
+    padding: 16px;
+
+    border-radius: 16px;
+    background-color: rgb(255, 190, 190);
+
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.title-tasks{
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 16px;
+    border-bottom: 2px solid #000000;
+}
+
+.title-tasks button{
+    padding: 6px;
+
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    background-color: rgb(243, 101, 101);
+    box-shadow: 4px 3px 2px rgb(0, 0, 0);
+}
+
+.title-tasks button:hover{
+    background-color: rgb(250, 69, 69);
+    box-shadow: 3px 2px 4px rgb(0, 0, 0);
+}
+
+.title-tasks h2, button{
+    font-family: 'Poppins', sans-serif;
+}
+
+.add-task-container{
+    display: none;
+    position: absolute;
+
+    left: 118px;
+
+    background-color: rgb(252, 241, 241);
+    border-radius: 8px;
+
+    margin-top: 14px;
+    margin-left: 180px;
+    padding: 24px;
+
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+.add-task-container input{
+    font-family: 'Poppins', sans-serif;
+
+    border: 1px solid black;
+    outline: 0;
+
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.add-task-container button{
+    padding: 6px;
+    border-radius: 8px;
+    margin-left: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.add-task{
+    color: #fff;
+    background-color: rgb(68, 68, 68);
+}
+
+.add-task:hover{
+    background-color: rgb(24, 24, 24);
+}
+
+.cancelar-task{
+    background-color: rgb(252, 241, 241);
+}
+
+main ul{
+    margin-top: 34px;
+
+    list-style: none;
+}
+
+.task-box{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 16px;
+
+    padding: 8px;
+    margin-top: 16px;
+
+    cursor: pointer;
+
+    width: 690px;
+    height: 64px;
+
+    box-shadow: 1px 1px 2px;
+}
+
+.task-box:hover{
+    box-shadow: 2px 2px 8px;
+}
+
+.imgTask{
+    max-width: 38px;
+    margin-left: 2px;
+}
+
+.task-box p{
+    margin-left: 16px;
+}
+
+.taskComplete{
+    color: #c2c2c2;
+    text-decoration: line-through;
+}
+
+.task-box li{
+    margin-top: 56px;
+}
+

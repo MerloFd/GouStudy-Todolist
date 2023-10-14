@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>GouStudy.io</title>
 </head>
@@ -16,11 +20,30 @@
             <h1>GouStudy</h1>
             <div class="btn-settings">
                 <button type="button">Metas</button>
-                <button type="button">Configurações</button>
+                <button type="button">Settings</button>
                 <button type="button">Login</button>
             </div>
             <img class="info" src="./imgs/info-icon.png" alt="info icon">
         </header>
+        <main>
+            <div class="title-tasks">
+                <h2>Tarefas</h2>
+                <button id="addTask-btn" type="button">+ Adicionar tarefa</button>
+                <div class="add-task-container">
+                    <form>
+                        <input required id="input-add-task" maxlength="50" type="text" placeholder="Nova tarefa">
+                        <button class="add-task" type="submit">Adicionar</button>
+                        <button class="cancelar-task" type="button">Fechar</button>
+                    </form>
+                </div>
+            </div>
+            <ul>
+                <li class="task-box">
+                    <img class="imgTask" src="./imgs/taskboxOK.png" alt="">
+                    <p class="taskComplete">Nova atividade</p>
+                </li>
+            </ul>
+        </main>
     </div>    
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./main.js"></script>
